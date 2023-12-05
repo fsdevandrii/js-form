@@ -15,14 +15,16 @@ document.querySelector('.form__button').onclick = () => {
   //     form.submit()
   //   }
 
+  console.log(email.checkValidity())
+
   // Перевірка на заповнення інпута (email) з кастомним повідомленням про помилку
 
   if (!email.checkValidity()) {
-    if (email.value.lenght === 0) {
+    if (email.value.length === 0) {
       email.setCustomValiditi('Помилка. Введіть значення')
     }
 
-    if (email.value.lenght > 10) {
+    if (email.value.length > 10) {
       email.setCustomValiditi(
         'Помилка. Введіть меньше 10  символів',
       )
