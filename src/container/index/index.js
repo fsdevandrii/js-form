@@ -1,3 +1,9 @@
-import '../../script/test'
+document.querySelector('.form__button').onclick = () => {
+  const form = document.getElementById('form')
 
-console.log('container')
+  if (form.reportValidity()) {
+    form.submit()
+  } else {
+    form.reset()
+  }
+}
