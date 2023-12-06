@@ -72,3 +72,12 @@
     object-fit: cover;
   }
 }
+
+.form__button-add,
+.form__button-save {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 32px;
+  cursor: pointer;
+  width: fit-content;
+}
